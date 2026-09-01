@@ -4,31 +4,27 @@ site_author: yeyousheng7
 
 theme:
   name: material
-  language: zh
+
   features:
-    - navigation.instant
-    - navigation.instant.progress
     - navigation.tabs
+    - navigation.sections
     - navigation.top
-    - navigation.footer
-    - toc.follow
+    - search.suggest
+    - search.highlight
     - content.code.copy
-    - content.code.select
+
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: deep purple
       toggle:
-        icon: material/weather-night
-        name: 切换至深色模式
+        icon: material/brightness-7
+        name: 深色模式
+
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: deep purple
       toggle:
-        icon: material/weather-sunny
-        name: 切换至浅色模式
+        icon: material/brightness-4
+        name: 浅色模式
 
 nav:
   - 首页: index.md
