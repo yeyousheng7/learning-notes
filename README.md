@@ -32,6 +32,12 @@ uv run mkdocs build --strict
 
 > `uv.lock` 必须提交到仓库；它用于保证本地与 CI 安装相同的依赖版本。
 
+### 首次部署出现 `Get Pages site failed`
+
+这表示仓库还没有创建 GitHub Pages 站点。完成上面的 **Settings → Pages → Source → GitHub Actions** 设置后，进入 **Actions**，打开失败的工作流并点击 **Re-run all jobs**。
+
+工作流不会使用 Personal Access Token 自动开启 Pages。这样可以避免在仓库中增加一个拥有管理权限的长期凭据。
+
 ## 添加新笔记
 
 1. 在 `docs/` 下创建 Markdown 文件；
