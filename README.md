@@ -1,58 +1,36 @@
+
 # Learning Notes
 
-基于 [MkDocs](https://www.mkdocs.org/) 和 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 构建的个人学习笔记站点。
+记录学习过程中值得长期保留的知识、方法与实践。
+
+内容会随着学习逐渐整理和补充，主要涉及计算机科学、软件开发，以及一些学习过程中沉淀下来的工具与方法。
+
+## 笔记
+
+目前已经整理：
+
+- [AI Prompts](docs/AI%20Prompts.md) —— 学习、总结、复习等场景中常用的 AI 提示词
+
+后续会逐步整理更多内容，例如：
+
+- Java / Spring
+- 数据库
+- 操作系统
+- 计算机网络与网络安全
+- Linux
+- 其他学习记录
+
+## 在线阅读
+
+笔记使用 MkDocs 构建为静态网站。
+
+> 在线地址：[yeyousheng7.github.io/learning-notes](https://yeyousheng7.github.io/learning-notes/)
 
 ## 本地预览
+
+本项目使用 [uv](https://docs.astral.sh/uv/) 管理依赖：
 
 ```bash
 uv sync
 uv run mkdocs serve
-```
-
-打开终端中显示的本地地址，即可实时预览。修改 `docs/` 中的 Markdown 文件后，页面会自动刷新。
-
-## 构建静态站点
-
-```bash
-uv run mkdocs build --strict
-```
-
-构建结果位于 `site/` 目录。将该目录中的内容上传到 GitHub Pages、Cloudflare Pages、Netlify 等静态托管服务即可发布。
-
-## GitHub Pages 自动部署
-
-仓库包含 `.github/workflows/deploy-pages.yml`。Pull Request 会执行构建检查；推送到 `main` 分支后会自动：
-
-1. 根据 `.python-version` 安装 Python；
-2. 使用 `uv.lock` 同步锁定的依赖；
-3. 以严格模式构建 MkDocs；
-4. 将 `site/` 发布到 GitHub Pages。
-
-首次使用时，在 GitHub 仓库中进入 **Settings → Pages**，将 **Build and deployment → Source** 设置为 **GitHub Actions**。之后推送到 `main`，或者在 **Actions** 页面手动运行工作流即可部署。
-
-> `uv.lock` 必须提交到仓库；它用于保证本地与 CI 安装相同的依赖版本。
-
-### 首次部署出现 `Get Pages site failed`
-
-这表示仓库还没有创建 GitHub Pages 站点。完成上面的 **Settings → Pages → Source → GitHub Actions** 设置后，进入 **Actions**，打开失败的工作流并点击 **Re-run all jobs**。
-
-工作流不会使用 Personal Access Token 自动开启 Pages。这样可以避免在仓库中增加一个拥有管理权限的长期凭据。
-
-## 添加新笔记
-
-1. 在 `docs/` 下创建 Markdown 文件；
-2. 在 `mkdocs.yml` 的 `nav` 中添加对应导航项；
-3. 本地预览并检查内容；
-4. 使用严格模式构建，确认没有无效配置或链接警告。
-
-## 目录结构
-
-```text
-.
-├─ docs/                         # 笔记源文件
-│  ├─ assets/stylesheets/        # 站点自定义样式
-│  ├─ index.md                   # 首页
-│  └─ AI Prompts.md              # AI 学习提示词库
-├─ mkdocs.yml                    # 站点配置与导航
-└─ pyproject.toml                # Python 依赖
 ```

@@ -1,0 +1,9 @@
+.md-footer-meta__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.md-copyright {
+  width: 100%;
+  text-align: center;
+}
