@@ -29,7 +29,18 @@ theme:
 
 nav:
   - 首页: index.md
-  - AI 提示词: AI Prompts.md
+  - AI 对话学习笔记:
+      - Java:
+          - JVM:
+              - 运行时内存、GC 与类加载: ai-generated/java/jvm/runtime-memory-gc-class-loading.md
+          - Spring Cloud:
+              - 微服务调用链与治理: ai-generated/java/spring-cloud/microservice-call-chain-governance.md
+      - 数据库:
+          - MySQL:
+              - 事务、MVCC 与锁: ai-generated/database/mysql/transactions-mvcc-locking.md
+              - EXPLAIN 与索引设计: ai-generated/database/mysql/explain-index-design.md
+              - EXPLAIN 实操复盘: ai-generated/database/mysql/explain-practice.md
+  - AI 提示词: ai/prompts.md
 
 markdown_extensions:
   - admonition
