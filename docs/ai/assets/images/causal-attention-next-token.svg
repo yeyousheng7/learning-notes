@@ -1,0 +1,61 @@
+<svg width="1000" height="320" viewBox="0 0 1000 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #f5f5f5; stroke: #d9d9d9; stroke-width: 1.5; }
+      .box { fill: #fafafa; stroke: #d9d9d9; stroke-width: 1.2; }
+      .box-muted { fill: #f0f0f0; stroke: #d9d9d9; stroke-width: 1.2; }
+      .box-highlight { fill: #fdfdfd; stroke: #bfbfbf; stroke-width: 1.5; }
+      .title { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif; font-size: 18px; fill: #333; font-weight: 500; }
+      .label { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif; font-size: 15px; fill: #666; }
+      .token { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif; font-size: 16px; fill: #333; }
+      .token-muted { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif; font-size: 16px; fill: #888; }
+      .token-highlight { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif; font-size: 16px; fill: #222; font-weight: 600; }
+      .arrow { font-family: sans-serif; font-size: 34px; fill: #888; }
+      .caption { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif; font-size: 14px; fill: #888; }
+      .small { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif; font-size: 13px; fill: #999; }
+      .line { stroke: #d0d0d0; stroke-width: 1.2; stroke-dasharray: 4 4; }
+    </style>
+  </defs>
+
+  <!-- Outer container -->
+  <rect x="8" y="8" width="944" height="300" rx="20" ry="20" class="bg"/>
+
+  <!-- Title -->
+  <text x="34" y="42" class="title">因果注意力：根据前文预测下一个 Token</text>
+
+  <!-- Top row -->
+  <rect x="38" y="80" width="140" height="40" rx="8" ry="8" class="box"/>
+  <rect x="188" y="80" width="140" height="40" rx="8" ry="8" class="box"/>
+  <rect x="338" y="80" width="140" height="40" rx="8" ry="8" class="box"/>
+  <rect x="488" y="80" width="140" height="40" rx="8" ry="8" class="box"/>
+  <rect x="638" y="80" width="140" height="40" rx="8" ry="8" class="box-muted"/>
+
+  <text x="108" y="104" text-anchor="middle" dominant-baseline="middle" class="token">我</text>
+  <text x="258" y="104" text-anchor="middle" dominant-baseline="middle" class="token">是</text>
+  <text x="408" y="104" text-anchor="middle" dominant-baseline="middle" class="token">一只</text>
+  <text x="558" y="104" text-anchor="middle" dominant-baseline="middle" class="token">小小</text>
+  <text x="708" y="104" text-anchor="middle" dominant-baseline="middle" class="token-muted">_</text>
+
+  <!-- Arrow -->
+  <text x="476" y="154" text-anchor="middle" class="arrow">↓</text>
+  <text x="476" y="188" text-anchor="middle" class="label">Causal Attention（只能参考左侧已出现的 Token）</text>
+
+  <!-- Bottom row -->
+  <rect x="38" y="214" width="140" height="40" rx="8" ry="8" class="box"/>
+  <rect x="188" y="214" width="140" height="40" rx="8" ry="8" class="box"/>
+  <rect x="338" y="214" width="140" height="40" rx="8" ry="8" class="box"/>
+  <rect x="488" y="214" width="140" height="40" rx="8" ry="8" class="box"/>
+  <rect x="638" y="214" width="140" height="40" rx="8" ry="8" class="box-highlight"/>
+
+  <text x="108" y="238" text-anchor="middle" dominant-baseline="middle" class="token">我</text>
+  <text x="258" y="238" text-anchor="middle" dominant-baseline="middle" class="token">是</text>
+  <text x="408" y="238" text-anchor="middle" dominant-baseline="middle" class="token">一只</text>
+  <text x="558" y="238" text-anchor="middle" dominant-baseline="middle" class="token">小小</text>
+  <text x="708" y="238" text-anchor="middle" dominant-baseline="middle" class="token-highlight">鸟</text>
+
+  <!-- Light guide line -->
+  <line x1="708" y1="120" x2="708" y2="214" class="line"/>
+
+  <!-- Footnote -->
+  <text x="476" y="285" text-anchor="middle" class="caption">示例：输入“我是一只小小 _”，模型根据前文预测下一个 Token 为“鸟”</text>
+</svg>

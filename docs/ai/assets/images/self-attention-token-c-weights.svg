@@ -1,0 +1,47 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1046" height="278" viewBox="0 0 1046 278">
+  <style>
+    text {
+      font-family: "Microsoft YaHei", "PingFang SC",
+                   "Noto Sans CJK SC", Arial, sans-serif;
+    }
+    .title { font-size: 22px; fill: #171717; }
+    .token { font-size: 20px; fill: #171717; }
+    .value { font-size: 19px; fill: #5e5e5e; }
+    .note { font-size: 18px; fill: #666666; }
+    .track { fill: #f1f1f1; }
+    .bar-secondary { fill: #8f9eae; }
+    .bar-primary { fill: #198f86; }
+  </style>
+
+  <!-- 卡片背景 -->
+  <rect x="3.5" y="13.5" width="1039" height="264"
+        rx="16" fill="#fcfcfc" stroke="#dedede"/>
+
+  <text x="20" y="56" class="title">
+    Token C 对各个位置的注意力权重
+  </text>
+
+  <!-- A：24.8% -->
+  <text x="20" y="107" class="token">A</text>
+  <rect x="77" y="86" width="877" height="27" rx="5" class="track"/>
+  <rect x="77" y="86" width="217.5" height="27" rx="5" class="bar-secondary"/>
+  <text x="971" y="106" class="value">24.8%</text>
+
+  <!-- B：24.8% -->
+  <text x="20" y="159" class="token">B</text>
+  <rect x="77" y="138" width="877" height="27" rx="5" class="track"/>
+  <rect x="77" y="138" width="217.5" height="27" rx="5" class="bar-secondary"/>
+  <text x="971" y="158" class="value">24.8%</text>
+
+  <!-- C：50.3% -->
+  <text x="20" y="210" class="token">C</text>
+  <rect x="77" y="189" width="877" height="27" rx="5" class="track"/>
+  <rect x="77" y="189" width="441.1" height="27" rx="5" class="bar-primary"/>
+  <text x="971" y="209" class="value">50.3%</text>
+
+  <!-- 底部说明 -->
+  <text x="20" y="254" class="note">
+    在这组人为指定的参数下，C 对自身的注意力权重最高。
+  </text>
+</svg>

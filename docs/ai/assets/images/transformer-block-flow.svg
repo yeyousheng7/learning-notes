@@ -1,0 +1,103 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="1180" viewBox="0 0 1020 1180">
+  <defs>
+    <style>
+      text {
+        font-family: "Microsoft YaHei", "PingFang SC",
+                     "Noto Sans CJK SC", Arial, sans-serif;
+      }
+      .heading { font-size: 20px; fill: #171717; }
+      .stage { font-size: 23px; fill: #161616; font-weight: 600; }
+      .stage-light { font-size: 23px; fill: #171717; }
+      .sub { font-size: 16px; fill: #6a6a6a; }
+      .foot { font-size: 18px; fill: #717171; }
+      .arrow {
+        fill: none; stroke: #606060; stroke-width: 1.8;
+        stroke-linecap: round; stroke-linejoin: round;
+      }
+      .normal { fill: #fcfcfc; stroke: #dddddd; }
+      .compute { fill: #e8f1f5; stroke: #cbd9df; }
+    </style>
+    <g id="down-arrow" class="arrow">
+      <path d="M0 0 V11 M-4.5 6.5 L0 11 L4.5 6.5"/>
+    </g>
+  </defs>
+
+  <!-- 背景 -->
+  <rect x="1.5" y="3.5" width="1017" height="1166"
+        rx="16" fill="#fafafa" stroke="#dfdfdf"/>
+
+  <text class="heading" x="18" y="40">
+    一个 Transformer Block 的主要计算流程
+  </text>
+
+  <!-- 输入 -->
+  <text class="stage" x="510" y="100" text-anchor="middle">
+    输入 X（Token 序列的向量）
+  </text>
+  <use href="#down-arrow" x="510" y="143"/>
+
+  <!-- 第一次归一化 -->
+  <rect class="normal" x="18" y="183" width="984" height="96" rx="8"/>
+  <text class="stage-light" x="510" y="225" text-anchor="middle">
+    Normalization
+  </text>
+  <text class="sub" x="510" y="257" text-anchor="middle">
+    归一化输入表示
+  </text>
+  <use href="#down-arrow" x="510" y="296"/>
+
+  <!-- 多头注意力 -->
+  <rect class="compute" x="18" y="337" width="984" height="96" rx="8"/>
+  <text class="stage" x="510" y="379" text-anchor="middle">
+    Multi-Head Attention
+  </text>
+  <text class="sub" x="510" y="412" text-anchor="middle">
+    不同 Token 之间的信息交互
+  </text>
+  <use href="#down-arrow" x="510" y="451"/>
+
+  <!-- 第一次残差连接 -->
+  <rect class="normal" x="18" y="490" width="984" height="97" rx="8"/>
+  <text class="stage" x="510" y="534" text-anchor="middle">
+    残差连接：与 X 相加
+  </text>
+  <text class="sub" x="510" y="566" text-anchor="middle">
+    保留原有的信息路径
+  </text>
+  <use href="#down-arrow" x="510" y="605"/>
+
+  <!-- 第二次归一化 -->
+  <rect class="normal" x="18" y="645" width="984" height="68" rx="8"/>
+  <text class="stage" x="510" y="688" text-anchor="middle">
+    Normalization
+  </text>
+  <use href="#down-arrow" x="510" y="730"/>
+
+  <!-- FFN -->
+  <rect class="compute" x="18" y="770" width="984" height="97" rx="8"/>
+  <text class="stage" x="510" y="811" text-anchor="middle">
+    Feed-Forward Network（FFN）
+  </text>
+  <text class="sub" x="510" y="845" text-anchor="middle">
+    对每个 Token 的表示进一步加工
+  </text>
+  <use href="#down-arrow" x="510" y="884"/>
+
+  <!-- 第二次残差连接 -->
+  <rect class="normal" x="18" y="925" width="984" height="68" rx="8"/>
+  <text class="stage" x="510" y="968" text-anchor="middle">
+    再次进行残差连接
+  </text>
+  <use href="#down-arrow" x="510" y="1010"/>
+
+  <!-- 输出 -->
+  <text class="stage" x="510" y="1092" text-anchor="middle">
+    输出 Y → 下一个 Transformer Block
+  </text>
+
+  <!-- 说明 -->
+  <text class="foot" x="18" y="1148">
+    简化流程图。残差连接实际有绕过子层的旁路，并非沿箭头串行计算。不同模型的具体结构可能不同。
+  </text>
+</svg>

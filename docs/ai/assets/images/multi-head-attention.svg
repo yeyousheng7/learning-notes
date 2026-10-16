@@ -1,0 +1,102 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1044" height="526" viewBox="0 0 1044 526">
+  <defs>
+    <style>
+      text {
+        font-family: "Microsoft YaHei", "PingFang SC",
+          "Noto Sans CJK SC", Arial, sans-serif;
+      }
+      .outer { fill: #fafafa; stroke: #e1e1e1; }
+      .panel { fill: #fcfcfc; stroke: #dedede; }
+      .heading { font-size: 22px; font-weight: 600; fill: #111; }
+      .head-label { font-size: 20px; fill: #111; }
+      .subtext { font-size: 14px; fill: #626262; }
+      .result-title { font-size: 22px; font-weight: 600; fill: #111; }
+      .result-desc { font-size: 16px; fill: #686868; }
+      .footer { font-size: 18px; fill: #666; }
+      .bar { fill: #188b96; }
+      .arrow {
+        stroke: #646464;
+        fill: none;
+        stroke-width: 1.8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+    <g id="down-arrow" class="arrow">
+      <path d="M0 -6 V5 M-4.5 0.5 L0 5 L4.5 0.5"/>
+    </g>
+  </defs>
+
+  <!-- 外层容器 -->
+  <rect class="outer" x="2.5" y="2.5"
+        width="1039" height="521" rx="16"/>
+
+  <!-- 输入 -->
+  <text class="heading" x="522" y="60" text-anchor="middle">
+    同一个输入序列 X
+  </text>
+  <use href="#down-arrow" transform="translate(522 110)"/>
+
+  <!-- 三个 Attention Head -->
+  <rect class="panel" x="19" y="144.5"
+        width="327.5" height="171" rx="11"/>
+  <rect class="panel" x="358.5" y="144.5"
+        width="327.5" height="171" rx="11"/>
+  <rect class="panel" x="698" y="144.5"
+        width="325.5" height="171" rx="11"/>
+
+  <text class="head-label" x="182.75" y="176" text-anchor="middle">
+    Head 1
+  </text>
+  <text class="head-label" x="522.25" y="176" text-anchor="middle">
+    Head 2
+  </text>
+  <text class="head-label" x="860.75" y="176" text-anchor="middle">
+    Head 3
+  </text>
+
+  <!-- Head 1：更关注中间位置 -->
+  <rect class="bar" x="69" y="269" width="73" height="8" rx="3"/>
+  <rect class="bar" x="146" y="210" width="73" height="67" rx="3"/>
+  <rect class="bar" x="223" y="269" width="74" height="8" rx="3"/>
+
+  <!-- Head 2：更关注左侧位置 -->
+  <rect class="bar" x="408" y="227" width="73" height="50" rx="3"/>
+  <rect class="bar" x="485" y="261" width="73" height="16" rx="3"/>
+  <rect class="bar" x="562" y="261" width="73" height="16" rx="3"/>
+
+  <!-- Head 3：更关注右侧位置 -->
+  <rect class="bar" x="747" y="261" width="73" height="16" rx="3"/>
+  <rect class="bar" x="824" y="261" width="73" height="16" rx="3"/>
+  <rect class="bar" x="901" y="227" width="73" height="50" rx="3"/>
+
+  <!-- Head 说明 -->
+  <text class="subtext" x="182.75" y="301" text-anchor="middle">
+    独立 Q、K、V
+  </text>
+  <text class="subtext" x="522.25" y="301" text-anchor="middle">
+    独立 Q、K、V
+  </text>
+  <text class="subtext" x="860.75" y="301" text-anchor="middle">
+    独立 Q、K、V
+  </text>
+
+  <!-- 拼接结果 -->
+  <use href="#down-arrow" transform="translate(522 338)"/>
+
+  <rect class="panel" x="19" y="373.5"
+        width="1005" height="97" rx="9"/>
+
+  <text class="result-title" x="522" y="417" text-anchor="middle">
+    拼接各个 Head 的结果
+  </text>
+  <text class="result-desc" x="522" y="449" text-anchor="middle">
+    再通过输出投影矩阵进行融合
+  </text>
+
+  <!-- 备注 -->
+  <text class="footer" x="19" y="500">
+    三个柱状图是假设的单个 Query 注意力分布，用于展示不同头可以形成不同的关联模式。
+  </text>
+</svg>

@@ -12,12 +12,15 @@
         - [MySQL：事务、MVCC 与锁](ai-generated/database/mysql/transactions-mvcc-locking.md)
         - [MySQL：EXPLAIN 与索引设计](ai-generated/database/mysql/explain-index-design.md)
         - [MySQL：EXPLAIN 实操复盘](ai-generated/database/mysql/explain-practice.md)
+- LLM 学习笔记
+    - [从 Token 到 Transformer](ai/from-token-to-transformer.md)
 - [AI 提示词](ai/prompts.md)
 
 “AI 对话学习笔记” 是我个人在使用对话式 AI 学习时，根据聊天记录总结而来。
 
 ## 最近整理
 
+- LLM：Token、Attention 与 Transformer
 - JVM 运行时内存、垃圾回收与类加载
 - MySQL 并发控制、EXPLAIN 与索引设计
 - Spring Cloud 微服务调用链与治理

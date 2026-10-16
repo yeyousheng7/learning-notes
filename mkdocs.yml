@@ -40,6 +40,8 @@ nav:
               - 事务、MVCC 与锁: ai-generated/database/mysql/transactions-mvcc-locking.md
               - EXPLAIN 与索引设计: ai-generated/database/mysql/explain-index-design.md
               - EXPLAIN 实操复盘: ai-generated/database/mysql/explain-practice.md
+  - LLM 学习笔记:
+      - 从 Token 到 Transformer: ai/from-token-to-transformer.md
   - AI 提示词: ai/prompts.md
 
 markdown_extensions:
@@ -50,11 +52,18 @@ markdown_extensions:
       permalink: true
       toc_depth: 3
   - pymdownx.details
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.tilde
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.superfences
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js
 
 copyright: Copyright &copy; 2026 · 持续学习，持续记录

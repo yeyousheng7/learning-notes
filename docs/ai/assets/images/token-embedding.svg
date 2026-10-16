@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="300" viewBox="0 0 940 300" role="img" aria-labelledby="svg-title svg-desc">
+  <title id="svg-title">文本、Token 与向量的转换过程</title>
+  <desc id="svg-desc">示意句子“小明 把 书 送给 小红 她”被划分为六个 Token，经 Embedding 转换为六个对应的向量。</desc>
+  <style>
+    .body { font-family: "Noto Sans CJK SC", "Microsoft YaHei", "PingFang SC", "Segoe UI", sans-serif; }
+    .title { font-size: 19px; font-weight: 500; fill: #282828; }
+    .token { font-size: 18px; font-weight: 400; fill: #292929; }
+    .label { font-size: 15px; fill: #666; }
+    .vector { font-family: "Segoe UI", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; font-size: 14px; fill: #555; }
+  </style>
+  <rect x="1" y="1" width="938" height="298" rx="17" fill="#fbfbfb" stroke="#e2e2e2" stroke-width="1.5" />
+  <g class="body">
+    <text class="title" x="28" y="35" dominant-baseline="middle">文本 → Token → 向量</text>
+
+    <!-- Each token is aligned with one vector below. -->
+    <g fill="#ffffff" stroke="#e7e7e7" stroke-width="1">
+      <rect x="30" y="72" width="138" height="42" rx="8"/>
+      <rect x="178" y="72" width="138" height="42" rx="8"/>
+      <rect x="326" y="72" width="138" height="42" rx="8"/>
+      <rect x="474" y="72" width="138" height="42" rx="8"/>
+      <rect x="622" y="72" width="138" height="42" rx="8"/>
+      <rect x="770" y="72" width="138" height="42" rx="8"/>
+    </g>
+    <g class="token" text-anchor="middle" dominant-baseline="middle">
+      <text x="99" y="93">小明</text>
+      <text x="247" y="93">把</text>
+      <text x="395" y="93">书</text>
+      <text x="543" y="93">送给</text>
+      <text x="691" y="93">小红</text>
+      <text x="839" y="93">她</text>
+    </g>
+
+    <path d="M470 130 V149 M464 143 L470 149 L476 143" fill="none" stroke="#8a8a8a" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="label" x="470" y="176" text-anchor="middle" dominant-baseline="middle">Embedding（词元嵌入）</text>
+
+    <g fill="#fff" stroke="#dddddd" stroke-width="1">
+      <rect x="30" y="207" width="138" height="46" rx="8"/>
+      <rect x="178" y="207" width="138" height="46" rx="8"/>
+      <rect x="326" y="207" width="138" height="46" rx="8"/>
+      <rect x="474" y="207" width="138" height="46" rx="8"/>
+      <rect x="622" y="207" width="138" height="46" rx="8"/>
+      <rect x="770" y="207" width="138" height="46" rx="8"/>
+    </g>
+    <g class="vector" text-anchor="middle" dominant-baseline="middle">
+      <text x="99" y="230">[0.2, 0.7, …]</text>
+      <text x="247" y="230">[0.5, 0.1, …]</text>
+      <text x="395" y="230">[0.9, 0.4, …]</text>
+      <text x="543" y="230">[0.3, 0.8, …]</text>
+      <text x="691" y="230">[0.6, 0.2, …]</text>
+      <text x="839" y="230">[0.1, 0.5, …]</text>
+    </g>
+  </g>
+</svg>

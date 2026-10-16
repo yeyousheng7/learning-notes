@@ -1,0 +1,98 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1010" height="346" viewBox="0 0 1010 346">
+  <defs>
+    <style>
+      .body {
+        font-family: "Microsoft YaHei", "PingFang SC",
+                     "Noto Sans CJK SC", Arial, sans-serif;
+      }
+      .heading { fill: #202020; font-size: 19px; }
+      .section { fill: #222; font-size: 16px; }
+      .note { fill: #737373; font-size: 15px; }
+      .legend { fill: #777; font-size: 15px; }
+    </style>
+
+    <!-- 允许访问 -->
+    <g id="allowed">
+      <rect width="160" height="48" rx="2"
+            fill="#cde9e0" stroke="#8dd2bf"/>
+      <path d="M75.5 24.5 L79.5 28.5 L86.5 20"
+            fill="none" stroke="#009c50"
+            stroke-width="1.7" stroke-linecap="round"
+            stroke-linejoin="round"/>
+    </g>
+
+    <!-- 被掩蔽 -->
+    <g id="blocked">
+      <rect width="160" height="48" rx="2"
+            fill="#f1f1f1" stroke="#e2e2e2"/>
+      <path d="M75.5 19.5 L84.5 28.5 M84.5 19.5 L75.5 28.5"
+            fill="none" stroke="#9c9c9c"
+            stroke-width="1.8" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <!-- 背景 -->
+  <rect x="0.5" y="0.5" width="1009" height="345"
+        rx="9" fill="#fafafa" stroke="#e3e3e3"/>
+
+  <g class="body">
+    <text class="heading" x="9" y="27">
+      Self-Attention 可访问位置对比
+    </text>
+
+    <!-- 两组标题 -->
+    <text class="section" x="256" y="62" text-anchor="middle">
+      双向 Attention
+    </text>
+    <text class="section" x="767" y="62" text-anchor="middle">
+      因果 Attention
+    </text>
+
+    <!-- 双向 Attention：所有位置都可以访问 -->
+    <use href="#allowed" x="9" y="78"/>
+    <use href="#allowed" x="176" y="78"/>
+    <use href="#allowed" x="343" y="78"/>
+
+    <use href="#allowed" x="9" y="132"/>
+    <use href="#allowed" x="176" y="132"/>
+    <use href="#allowed" x="343" y="132"/>
+
+    <use href="#allowed" x="9" y="186"/>
+    <use href="#allowed" x="176" y="186"/>
+    <use href="#allowed" x="343" y="186"/>
+
+    <!-- 因果 Attention：只允许访问当前及之前位置 -->
+    <use href="#allowed" x="520" y="78"/>
+    <use href="#blocked" x="687" y="78"/>
+    <use href="#blocked" x="854" y="78"/>
+
+    <use href="#allowed" x="520" y="132"/>
+    <use href="#allowed" x="687" y="132"/>
+    <use href="#blocked" x="854" y="132"/>
+
+    <use href="#allowed" x="520" y="186"/>
+    <use href="#allowed" x="687" y="186"/>
+    <use href="#allowed" x="854" y="186"/>
+
+    <!-- 位置说明 -->
+    <text class="note" x="9" y="270">
+      行：当前 Token（A、B、C）
+    </text>
+    <text class="note" x="1001" y="270" text-anchor="end">
+      列：被访问 Token（A、B、C）
+    </text>
+
+    <!-- 图例 -->
+    <path d="M12 309 L15.5 312.5 L22 305"
+          fill="none" stroke="#009c50"
+          stroke-width="1.6" stroke-linecap="round"
+          stroke-linejoin="round"/>
+    <text class="legend" x="30" y="315">允许参与</text>
+
+    <path d="M116 306 L124 314 M124 306 L116 314"
+          fill="none" stroke="#9c9c9c"
+          stroke-width="1.7" stroke-linecap="round"/>
+    <text class="legend" x="133" y="315">被掩蔽</text>
+  </g>
+</svg>
