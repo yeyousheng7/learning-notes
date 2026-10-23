@@ -13,7 +13,7 @@
   - Java：JVM、Spring Cloud
   - 数据库：MySQL 并发控制、EXPLAIN 与索引设计
 - [LLM 学习笔记](docs/ai/from-token-to-transformer.md) —— 从 Token、注意力机制到 Transformer
-- [AI 提示词](docs/ai/prompts.md) —— 学习、总结、复习等场景中常用的 AI 提示词
+- [AI 提示词库](docs/ai/prompts.md) —— PPT 学习、考前复习、笔记整理与提示词编写
 
 后续会逐步整理更多内容，例如：
 

@@ -14,12 +14,17 @@
         - [MySQL：EXPLAIN 实操复盘](ai-generated/database/mysql/explain-practice.md)
 - LLM 学习笔记
     - [从 Token 到 Transformer](ai/from-token-to-transformer.md)
-- [AI 提示词](ai/prompts.md)
+- [AI 提示词库](ai/prompts.md)
+    - [PPT 逐页精讲](ai/prompts.md#ppt-deep-dive)
+    - [PPT 期末速通](ai/prompts.md#ppt-exam-review)
+    - [整理对话笔记](ai/prompts.md#conversation-notes)
+    - [Prompt Writer](ai/prompts.md#prompt-writer)
 
 “AI 对话学习笔记” 是我个人在使用对话式 AI 学习时，根据聊天记录总结而来。
 
 ## 最近整理
 
+- AI 提示词：更新学习模板，新增 Prompt Writer
 - LLM：Token、Attention 与 Transformer
 - JVM 运行时内存、垃圾回收与类加载
 - MySQL 并发控制、EXPLAIN 与索引设计
