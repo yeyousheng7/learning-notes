@@ -14,6 +14,8 @@
         - [MySQL：EXPLAIN 实操复盘](ai-generated/database/mysql/explain-practice.md)
 - LLM 学习笔记
     - [从 Token 到 Transformer](ai/from-token-to-transformer.md)
+- 科普向
+    - [代理](popular-science/proxy.md)
 - [AI 提示词库](ai/prompts.md)
     - [PPT 逐页精讲](ai/prompts.md#ppt-deep-dive)
     - [PPT 期末速通](ai/prompts.md#ppt-exam-review)

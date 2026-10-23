@@ -22,6 +22,9 @@ wheels/
 # MkDocs build output
 site/
 
+# Local note backups
+/backups/
+
 # Local environment files and secrets
 .env
 .env.*
