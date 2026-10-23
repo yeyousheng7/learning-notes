@@ -25,6 +25,9 @@ site/
 # Local note backups
 /backups/
 
+# Local notes to be added to the repository
+TODOs/
+
 # Local environment files and secrets
 .env
 .env.*

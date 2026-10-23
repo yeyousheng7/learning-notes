@@ -14,3 +14,9 @@
   height: auto;
   margin-inline: auto;
 }
+
+@media screen and (min-width: 76.25em) {
+  [dir="ltr"] .md-header__title {
+    margin-left: 0.4rem;
+  }
+}

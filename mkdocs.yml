@@ -1,10 +1,18 @@
-site_name: 学习笔记
-site_description: 记录、整理与复习我的学习过程
+site_name: 笔迹
+site_description: 记录、整理、足迹。
 site_author: yeyousheng7
+
+hooks:
+  - hooks/site_assets.py
+
+watch:
+  - assets
 
 theme:
   name: material
   language: zh
+  logo: assets/logo.svg
+  favicon: assets/favicon.svg
 
   features:
     - navigation.tabs
