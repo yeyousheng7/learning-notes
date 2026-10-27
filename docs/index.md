@@ -14,6 +14,7 @@
         - [MySQL：EXPLAIN 实操复盘](ai-generated/database/mysql/explain-practice.md)
 - LLM 学习笔记
     - [从 Token 到 Transformer](ai/from-token-to-transformer.md)
+    - [从模型架构到训练与推理](ai/from-architecture-to-reasoning.md)
 - 科普向
     - [代理](popular-science/proxy.md)
 - [AI 提示词库](ai/prompts.md)
@@ -27,6 +28,7 @@
 ## 最近整理
 
 - AI 提示词：更新学习模板，新增 Prompt Writer
+- LLM：模型架构、训练与推理
 - LLM：Token、Attention 与 Transformer
 - JVM 运行时内存、垃圾回收与类加载
 - MySQL 并发控制、EXPLAIN 与索引设计

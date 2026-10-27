@@ -12,7 +12,9 @@
 - [AI 对话学习笔记](docs/ai-generated/) —— 通过 Prompt 驱动学习对话，并由 AI 整理生成的学习记录
   - Java：JVM、Spring Cloud
   - 数据库：MySQL 并发控制、EXPLAIN 与索引设计
-- [LLM 学习笔记](docs/ai/from-token-to-transformer.md) —— 从 Token、注意力机制到 Transformer
+- LLM 学习笔记
+  - [从 Token 到 Transformer](docs/ai/from-token-to-transformer.md)
+  - [从模型架构到训练与推理](docs/ai/from-architecture-to-reasoning.md)
 - 科普向
   - [代理](docs/popular-science/proxy.md)
 - [AI 提示词库](docs/ai/prompts.md) —— PPT 学习、考前复习、笔记整理与提示词编写

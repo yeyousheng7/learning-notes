@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1053" height="476" viewBox="0 0 1053 476" role="img" aria-labelledby="title desc">
+  <title id="title">一个简化的重复生成过程</title>
+  <desc id="desc">模型不断将已经生成的句子加入上下文，因而可能陷入重复循环。</desc>
+  <style>
+    .ui { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", "Source Han Sans SC", "WenQuanYi Micro Hei", sans-serif; }
+    .secondary { fill: #666666; font-size: 16px; }
+    .primary { fill: #171717; font-size: 22px; }
+  </style>
+
+  <rect x="0" y="0" width="1053" height="476" fill="#fcfcfc" />
+  <rect x="12.5" y="4.5" width="1028" height="466.5" rx="18" fill="none" stroke="#e2e2e2" stroke-width="1" />
+
+  <g class="ui">
+    <text x="28" y="39" class="secondary">一个简化的重复生成过程</text>
+
+    <text x="45" y="87" class="secondary">第 1 次</text>
+    <text x="45" y="123" class="primary">模型输出：「因此，我们需要重新考虑这个问题。」</text>
+
+    <g fill="none" stroke="#888888" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M447 171 v12 m-5 -5 5 5 5 -5" />
+    </g>
+    <text x="463" y="183" class="secondary">把生成结果加入上下文</text>
+
+    <text x="45" y="240" class="secondary">第 2 次</text>
+    <text x="45" y="275" class="primary">模型继续：「因此，我们需要重新考虑这个问题。」</text>
+
+    <g fill="none" stroke="#888888" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M472 323 v12 m-5 -5 5 5 5 -5" />
+    </g>
+    <text x="488" y="336" class="secondary">再次加入上下文</text>
+
+    <rect x="29.5" y="357.5" width="1004" height="96" rx="11" fill="none" stroke="#d97706" stroke-width="1" />
+    <text x="46" y="391" class="secondary">第 3 次及以后</text>
+    <text x="46" y="427" class="primary">因此，我们需要重新考虑这个问题。因此，我们需要重新考虑这个问题……</text>
+  </g>
+</svg>

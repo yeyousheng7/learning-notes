@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1032" height="448" viewBox="0 0 1032 448" role="img" aria-labelledby="title desc">
+  <title id="title">Transformer 模型：Encoder 与 Decoder 的 Block 堆叠结构</title>
+  <desc id="desc">Transformer 模型可以采用 Encoder-only、Decoder-only 或 Encoder-Decoder 架构。左侧 Encoder 包含三个 Encoder Block，右侧 Decoder 包含三个 Decoder Block。</desc>
+  <style>
+    .txt { font-family: "Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", Arial, sans-serif; fill: #111; }
+    .heading { font-size: 22px; font-weight: 700; }
+    .subtitle { font-size: 16px; fill: #505050; }
+    .panel-heading { font-size: 22px; font-weight: 700; }
+    .block-label { font-size: 17px; }
+    .caption { font-size: 18px; fill: #505050; }
+  </style>
+
+  <!-- Rounded outer frame -->
+  <rect x="4" y="2.5" width="1024" height="439" rx="19" fill="#fcfcfc" stroke="#dedede" stroke-width="1"/>
+
+  <!-- Figure heading -->
+  <text class="txt heading" x="516" y="45" text-anchor="middle">Transformer 模型</text>
+  <text class="txt subtitle" x="516" y="78" text-anchor="middle">可以采用 Encoder-only、Decoder-only 或 Encoder-Decoder 架构</text>
+
+  <!-- Small down arrow at upper left -->
+  <path d="M 31.5 97 L 31.5 109 M 26.5 104.5 L 31.5 109.5 L 36.5 104.5" fill="none" stroke="#555" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Encoder panel -->
+  <rect x="20.5" y="125.5" width="495" height="236" rx="14" fill="#edf6f5" stroke="#80d0c9" stroke-width="1"/>
+  <text class="txt panel-heading" x="268" y="168" text-anchor="middle">Encoder</text>
+  <g fill="#f4f4f4" stroke="#d8d8d8" stroke-width="1">
+    <rect x="38.5" y="189.5" width="459" height="44" rx="11"/>
+    <rect x="38.5" y="245.5" width="459" height="44" rx="11"/>
+    <rect x="38.5" y="301.5" width="459" height="44" rx="11"/>
+  </g>
+  <text class="txt block-label" x="268" y="217" text-anchor="middle">Encoder Block 3</text>
+  <text class="txt block-label" x="268" y="273" text-anchor="middle">Encoder Block 2</text>
+  <text class="txt block-label" x="268" y="329" text-anchor="middle">Encoder Block 1</text>
+
+  <!-- Decoder panel -->
+  <rect x="532.5" y="125.5" width="493" height="236" rx="14" fill="#f0f5fe" stroke="#90bcfc" stroke-width="1"/>
+  <text class="txt panel-heading" x="779" y="168" text-anchor="middle">Decoder</text>
+  <g fill="#f4f4f4" stroke="#d8d8d8" stroke-width="1">
+    <rect x="550.5" y="189.5" width="458" height="44" rx="11"/>
+    <rect x="550.5" y="245.5" width="458" height="44" rx="11"/>
+    <rect x="550.5" y="301.5" width="458" height="44" rx="11"/>
+  </g>
+  <text class="txt block-label" x="779" y="217" text-anchor="middle">Decoder Block 3</text>
+  <text class="txt block-label" x="779" y="273" text-anchor="middle">Decoder Block 2</text>
+  <text class="txt block-label" x="779" y="329" text-anchor="middle">Decoder Block 1</text>
+
+  <!-- Caption -->
+  <text class="txt caption" x="21" y="393">注：经典 Encoder-Decoder Transformer 同时具有两组 Block；Decoder-only 模型只有右侧结构，且 Block 组成有所</text>
+  <text class="txt caption" x="21" y="419">不同。</text>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="650" viewBox="0 0 1060 650" role="img" aria-labelledby="title desc">
+  <title id="title">奖励模型指导语言模型强化学习的流程</title>
+  <desc id="desc">用户问题输入语言模型，生成完整回答后交给奖励模型评分，再由强化学习算法根据奖励信号更新语言模型参数，并重复生成、评价与优化。</desc>
+  <rect width="1060" height="650" fill="#ffffff"/>
+  <rect x="4.5" y="9.5" width="1051" height="636" rx="21" fill="#fcfcfc" stroke="#dedede"/>
+
+  <g font-family="'Noto Sans CJK SC', 'Microsoft YaHei', 'PingFang SC', Arial, sans-serif" text-anchor="middle">
+    <!-- Prompt -->
+    <text x="530" y="69" font-size="22" font-weight="700" fill="#171717">用户问题</text>
+    <path d="M530 111 V122 M525 117 L530 122 L535 117" fill="none" stroke="#676767" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Policy -->
+    <rect x="21.5" y="151.5" width="1017" height="96" rx="12" fill="#fbfbfb" stroke="#dedede"/>
+    <text x="530" y="194" font-size="23" font-weight="700" fill="#171717">语言模型（Policy）</text>
+    <text x="530" y="226" font-size="17" fill="#686868">生成一个完整回答</text>
+    <path d="M530 265 V276 M525 271 L530 276 L535 271" fill="none" stroke="#676767" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Reward model -->
+    <rect x="21" y="305" width="1018" height="95" rx="11" fill="#e7f3f2"/>
+    <text x="530" y="346" font-size="23" font-weight="700" fill="#171717">Reward Model</text>
+    <text x="530" y="379" font-size="17" fill="#686868">对这个回答进行评分</text>
+    <path d="M530 415 V426 M525 421 L530 426 L535 421" fill="none" stroke="#676767" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- RL algorithm -->
+    <rect x="21.5" y="457.5" width="1017" height="95" rx="12" fill="#fbfbfb" stroke="#dedede"/>
+    <text x="530" y="501" font-size="23" font-weight="700" fill="#171717">强化学习算法</text>
+    <text x="530" y="531" font-size="17" fill="#686868">利用奖励信号更新语言模型的参数</text>
+
+    <!-- Repeat loop indicator (screenshot's hover/download icon intentionally omitted) -->
+    <path d="M537 583 A12 12 0 1 0 525 591" fill="none" stroke="#6b6b6b" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M537 576 L537 583 L530 582" fill="none" stroke="#6b6b6b" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="530" y="626" font-size="17" fill="#686868">重复生成、评价与优化</text>
+  </g>
+</svg>

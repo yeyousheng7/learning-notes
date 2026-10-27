@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1009" height="642" viewBox="0 0 1009 642" role="img" aria-labelledby="diagram-title diagram-desc">
+  <title id="diagram-title">Encoder Block × N 示意图</title>
+  <desc id="diagram-desc">I、love、apples 三个输入 Token 经过多层 Encoder Block 后，分别得到 h1、h2、h3 三个上下文表示。</desc>
+  <rect width="1009" height="642" fill="#FAFAFA"/>
+  <g font-family="'Noto Sans CJK SC', Arial, sans-serif" text-anchor="middle" fill="#101010">
+    <!-- 输入 Token -->
+    <g fill="#DFF0EE" stroke="#83C9C3" stroke-width="3">
+      <rect x="143" y="34" width="195" height="88" rx="19"/>
+      <rect x="419" y="34" width="196" height="88" rx="19"/>
+      <rect x="695" y="34" width="196" height="88" rx="19"/>
+    </g>
+    <g font-size="42" font-weight="400">
+      <text x="240.5" y="90">I</text>
+      <text x="517" y="90">love</text>
+      <text x="793" y="90">apples</text>
+    </g>
+    <!-- 输入连接线 -->
+    <g stroke="#65768E" stroke-width="4.5" fill="none">
+      <path d="M240.5 122 V190"/>
+      <path d="M517 122 V190"/>
+      <path d="M793 122 V190"/>
+    </g>
+    <!-- Encoder 模块 -->
+    <rect x="71" y="194" width="892" height="218" rx="30" fill="#F0F1F4" stroke="#ADB7C5" stroke-width="3"/>
+    <text x="517" y="265" font-size="45" font-weight="700">Encoder Block × N</text>
+    <text x="517" y="334" font-size="37">Self-Attention + FFN 等</text>
+    <!-- 输出连接线与箭头 -->
+    <g stroke="#65768E" stroke-width="4.5" fill="none" stroke-linecap="square" stroke-linejoin="miter">
+      <path d="M240.5 412 V487"/>
+      <path d="M228 475 L240.5 490 L253 475"/>
+      <path d="M517 412 V487"/>
+      <path d="M504.5 475 L517 490 L529.5 475"/>
+      <path d="M793 412 V487"/>
+      <path d="M780.5 475 L793 490 L805.5 475"/>
+    </g>
+    <!-- 输出上下文表示 -->
+    <g fill="#DFF0EE" stroke="#83C9C3" stroke-width="3">
+      <rect x="159" y="496" width="164" height="82" rx="17"/>
+      <rect x="435" y="496" width="164" height="82" rx="17"/>
+      <rect x="711" y="496" width="164" height="82" rx="17"/>
+    </g>
+    <g font-size="38">
+      <text x="241" y="551">h1</text>
+      <text x="517" y="551">h2</text>
+      <text x="793" y="551">h3</text>
+    </g>
+    <text x="504.5" y="619" font-size="19" fill="#626262">简化后的 Encoder：输入 Token 经过多层处理，得到各自的上下文表示。</text>
+  </g>
+</svg>

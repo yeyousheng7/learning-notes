@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1047" height="483" viewBox="0 0 1047 483" role="img" aria-labelledby="diagram-title diagram-desc">
+  <title id="diagram-title">Reward Model 为候选回答打分</title>
+  <desc id="diagram-desc">用户问题与候选回答输入奖励模型，模型对回答 A 打分 0.5，对回答 B 打分 1.5。分数不是百分制，也不是正确率。</desc>
+  <defs>
+    <style><![CDATA[
+      text { font-family: "Noto Sans CJK SC", "Microsoft YaHei", "PingFang SC", sans-serif; }
+      .heading { font-size: 22px; font-weight: 700; fill: #141414; }
+      .subtitle { font-size: 17px; fill: #696969; }
+      .label { font-size: 17px; fill: #737373; }
+      .score { font-size: 30px; font-weight: 700; fill: #111; }
+      .score-green { fill: #00a448; }
+    ]]></style>
+  </defs>
+
+  <rect width="1047" height="483" fill="#fcfcfc"/>
+  <rect x="18.5" y="2.5" width="1028" height="472" rx="21" fill="#fcfcfc" stroke="#e1e1e1"/>
+
+  <text x="537.5" y="61" class="heading" text-anchor="middle">用户问题 + 候选回答</text>
+  <text x="537.5" y="93" class="subtitle" text-anchor="middle">输入到 Reward Model</text>
+
+  <path d="M 537.5 131 V 142 M 532.7 137.1 L 537.5 142 L 542.3 137.1" fill="none" stroke="#606060" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="35" y="171" width="1005" height="95" rx="11" fill="#e7f3f2"/>
+  <text x="537.5" y="212" class="heading" text-anchor="middle">Reward Model</text>
+  <text x="537.5" y="245" class="subtitle" text-anchor="middle">经过训练，学习人类偏好</text>
+
+  <path d="M 537.5 282 V 294 M 532.7 289.1 L 537.5 294 L 542.3 289.1" fill="none" stroke="#606060" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="35.5" y="323.5" width="496" height="97" rx="10" fill="#fcfcfc" stroke="#dedede"/>
+  <text x="283.5" y="357" class="label" text-anchor="middle">回答 A</text>
+  <text x="283.5" y="396.5" class="score" text-anchor="middle">0.5</text>
+
+  <rect x="543.5" y="323.5" width="496" height="97" rx="10" fill="#eaf6f4" stroke="#65bfb9"/>
+  <text x="791.5" y="357" class="label" text-anchor="middle">回答 B</text>
+  <text x="791.5" y="396.5" class="score score-green" text-anchor="middle">1.5</text>
+
+  <text x="35" y="452" class="subtitle">假设的奖励分数。它们不是百分制，也不代表回答正确的概率。</text>
+</svg>

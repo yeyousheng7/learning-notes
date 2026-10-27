@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1029 491" width="1029" height="491" role="img" aria-labelledby="title desc">
+  <title id="title">一次 SFT 参数更新（简化）</title>
+  <desc id="desc">用户指令和标准回答经过 Transformer 预测各位置 Token，计算回答部分的 Loss，然后反向传播更新模型参数。</desc>
+  <rect width="1029" height="491" fill="#fafafa"/>
+  <g font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, Arial, sans-serif" fill="#171717">
+    <text x="7" y="32" font-size="20">一次 SFT 参数更新（简化）</text>
+    <g stroke="#d6d6d6" stroke-width="1" fill="#f3f3f3">
+      <rect x="7.5" y="50.5" width="1006" height="58" rx="10"/>
+      <rect x="7.5" y="166.5" width="1006" height="58" rx="10"/>
+      <rect x="7.5" y="281.5" width="1006" height="58" rx="10"/>
+    </g>
+    <rect x="7.5" y="397.5" width="1006" height="58" rx="10" fill="#e8f4f3" stroke="#7bd0c8" stroke-width="1"/>
+    <g font-size="23" text-anchor="middle" dominant-baseline="middle">
+      <text x="510.5" y="79.5">用户指令 + 标准回答</text>
+      <text x="510.5" y="195.5">Transformer 预测回答中各位置的 Token</text>
+      <text x="510.5" y="310.5">计算回答部分的 Loss</text>
+      <text x="510.5" y="426.5">反向传播并更新模型参数</text>
+    </g>
+    <g stroke="#606060" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M510.5 131.3 v10.9 m-4.5 -4.5 4.5 4.5 4.5 -4.5"/>
+      <path d="M510.5 246.3 v10.9 m-4.5 -4.5 4.5 4.5 4.5 -4.5"/>
+      <path d="M510.5 361.3 v10.9 m-4.5 -4.5 4.5 4.5 4.5 -4.5"/>
+    </g>
+  </g>
+</svg>

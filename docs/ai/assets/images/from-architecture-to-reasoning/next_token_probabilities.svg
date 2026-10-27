@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1020" height="392" viewBox="0 0 1020 392" role="img" aria-labelledby="title desc">
+  <title id="title">预测“我喜欢吃”之后的下一个 Token</title>
+  <desc id="desc">假设下一个 Token 的概率：苹果 45%，米饭 30%，香蕉 15%，其他 Token 10%。数据仅用于理解。</desc>
+  <style>
+    text { font-family: "Noto Sans CJK SC", "Microsoft YaHei", "PingFang SC", sans-serif; }
+    .heading { fill: #161616; font-size: 21px; font-weight: 400; }
+    .category { fill: #222; font-size: 19px; font-weight: 400; }
+    .percent { fill: #606060; font-size: 19px; font-weight: 400; }
+    .note { fill: #666; font-size: 18px; font-weight: 400; }
+    .track { fill: #f1f1f1; }
+    .bar-primary { fill: #0d9488; }
+    .bar-secondary { fill: #94a3b8; }
+  </style>
+  <rect x="0.5" y="0.5" width="1019" height="385.5" rx="13" fill="#fcfcfc" stroke="#e5e5e5" />
+  <text class="heading" x="8" y="36">预测“我喜欢吃”之后的下一个 Token</text>
+
+  <text class="category" x="9" y="86">苹果</text>
+  <text class="percent" x="1014" y="86" text-anchor="end">45%</text>
+  <rect class="track" x="9" y="103" width="1005" height="14" rx="7" />
+  <rect class="bar-primary" x="9" y="103" width="452.25" height="14" rx="7" />
+
+  <text class="category" x="9" y="156">米饭</text>
+  <text class="percent" x="1014" y="156" text-anchor="end">30%</text>
+  <rect class="track" x="9" y="173" width="1005" height="14" rx="7" />
+  <rect class="bar-secondary" x="9" y="173" width="301.5" height="14" rx="7" />
+
+  <text class="category" x="9" y="226">香蕉</text>
+  <text class="percent" x="1014" y="226" text-anchor="end">15%</text>
+  <rect class="track" x="9" y="243" width="1005" height="14" rx="7" />
+  <rect class="bar-secondary" x="9" y="243" width="150.75" height="14" rx="7" />
+
+  <text class="category" x="9" y="297">其他 Token</text>
+  <text class="percent" x="1014" y="297" text-anchor="end">10%</text>
+  <rect class="track" x="9" y="314" width="1005" height="14" rx="7" />
+  <rect class="bar-secondary" x="9" y="314" width="100.5" height="14" rx="7" />
+
+  <text class="note" x="9" y="363">纯粹用于理解的假设概率，实际 Token 划分和模型输出可能不同。</text>
+</svg>

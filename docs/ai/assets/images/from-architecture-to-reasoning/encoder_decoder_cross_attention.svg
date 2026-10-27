@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1043 787" width="1043" height="787" role="img" aria-labelledby="title desc">
+  <title id="title">Encoder–Decoder 的简化信息流</title>
+  <desc id="desc">英文原文经过 Encoder 双向自注意力处理，编码结果进入 Decoder 的 Cross-Attention；已生成中文经过 Masked Self-Attention 后进入 Cross-Attention，再经 FFN 预测下一个词。</desc>
+  <defs>
+    <style>
+      .zh { font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif; fill:#101010; }
+      .bold { font-weight: 700; }
+      .teal { fill:#DFEFEF; stroke:#80C9C6; stroke-width:2.8; }
+      .slate { fill:#EEEFF1; stroke:#ACB5C3; stroke-width:2.8; }
+      .line { fill:none; stroke:#64758F; stroke-width:4; }
+      .crossline { fill:none; stroke:#0B988A; stroke-width:4; }
+    </style>
+    <marker id="arrow-gray" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#64758F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect x="4" y="0.5" width="1035" height="785" rx="20" fill="#FDFDFE" stroke="#E4E5E7" stroke-width="1"/>
+
+  <!-- Data flow (behind blocks) -->
+  <path class="line" d="M231 151 V223"/>
+  <path class="line" d="M819 151 V223"/>
+  <path class="line" d="M819 358 V420"/>
+  <path class="crossline" d="M231 359 V453 H623"/>
+  <path class="line" d="M819 547 V608" marker-end="url(#arrow-gray)"/>
+
+  <!-- Original English -->
+  <rect class="teal" x="35" y="39" width="394" height="114" rx="20"/>
+  <text class="zh" x="232" y="84" font-size="34" text-anchor="middle">英文原文</text>
+  <text class="zh bold" x="232" y="124" font-size="34" text-anchor="middle">I love apples</text>
+
+  <!-- Encoder -->
+  <rect class="teal" x="35" y="226" width="394" height="133" rx="19"/>
+  <text class="zh bold" x="232" y="279" font-size="36" text-anchor="middle">Encoder</text>
+  <text class="zh" x="232" y="328" font-size="30" text-anchor="middle">双向 Self-Attention</text>
+
+  <!-- Generated Chinese -->
+  <rect class="slate" x="624" y="39" width="387" height="114" rx="20"/>
+  <text class="zh" x="818" y="85" font-size="34" text-anchor="middle">已生成的中文</text>
+  <text class="zh bold" x="818" y="125" font-size="34" text-anchor="middle">我 喜欢</text>
+
+  <!-- Decoder masked attention -->
+  <rect class="slate" x="624" y="226" width="387" height="133" rx="19"/>
+  <text class="zh bold" x="818" y="279" font-size="34" text-anchor="middle">Masked Self-Attention</text>
+  <text class="zh" x="818" y="328" font-size="30" text-anchor="middle">目标序列信息</text>
+
+  <!-- Decoder cross attention -->
+  <rect class="teal" x="624" y="422" width="387" height="125" rx="19"/>
+  <text class="zh bold" x="818" y="471" font-size="35" text-anchor="middle">Cross-Attention</text>
+  <text class="zh" x="818" y="515" font-size="30" text-anchor="middle">参考英文输入</text>
+
+  <!-- Decoder feed-forward -->
+  <rect class="slate" x="624" y="612" width="387" height="101" rx="19"/>
+  <text class="zh bold" x="818" y="675" font-size="34" text-anchor="middle">FFN → 预测下一个词</text>
+
+  <text x="21" y="764" font-family="'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif" font-size="19" fill="#666666">Encoder-Decoder 的简化信息流。实际模型还包含多层 Block、残差连接、归一化和输出投影等。</text>
+</svg>
