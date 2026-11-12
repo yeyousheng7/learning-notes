@@ -20,3 +20,126 @@
     margin-left: 0.4rem;
   }
 }
+
+/* Keep the personal writing entrance apart from the study categories. */
+.md-tabs__list {
+  width: 100%;
+}
+
+.md-tabs__item--sparks {
+  flex-shrink: 0;
+  margin-inline-start: auto;
+  padding-inline-start: 2rem;
+}
+
+.md-tabs__item--sparks .md-tabs__link {
+  border-inline-start: 1px solid currentColor;
+  padding-inline-start: 1.2rem;
+}
+
+.md-nav__item--sparks {
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+}
+
+/* A quiet reading column for the timeline and individual entries. */
+.md-content--sparks {
+  width: 100%;
+  max-width: 42rem;
+  margin-inline: auto;
+}
+
+.sparks-page {
+  padding-block: 1.5rem 3rem;
+}
+
+.sparks-heading {
+  margin-bottom: 3rem;
+}
+
+.sparks-heading h1 {
+  margin-bottom: 0.5rem;
+}
+
+.sparks-heading p,
+.sparks-empty,
+.sparks-date {
+  color: var(--md-default-fg-color--light);
+}
+
+.sparks-empty {
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  padding-top: 1.5rem;
+  font-size: 0.8rem;
+}
+
+.sparks-timeline {
+  list-style: none;
+  margin: 0 0 0 0.25rem;
+  padding: 0;
+}
+
+.sparks-timeline__item {
+  position: relative;
+  border-inline-start: 1px solid var(--md-default-fg-color--lightest);
+  padding: 0 0 2.5rem 1.8rem;
+}
+
+.sparks-timeline__item::before {
+  position: absolute;
+  top: 0.3rem;
+  inset-inline-start: -0.2rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--md-default-fg-color--light);
+  content: "";
+}
+
+.sparks-timeline .md-post {
+  margin-bottom: 0;
+}
+
+.sparks-timeline .md-post__header {
+  margin-bottom: 0.6rem;
+}
+
+.sparks-timeline .md-post__content h2 {
+  margin-top: 0;
+}
+
+.sparks-back {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+}
+
+.sparks-date {
+  display: block;
+  margin-bottom: 0.8rem;
+  font-size: 0.7rem;
+}
+
+.sparks-entry h1 {
+  margin-top: 0;
+}
+
+.md-main:has(.sparks-page) .md-sidebar--secondary {
+  display: none;
+}
+
+@media screen and (min-width: 76.25em) {
+  .md-main:has(.sparks-page) .md-sidebar--primary {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 44.984375em) {
+  .sparks-page {
+    padding-top: 0.5rem;
+  }
+
+  .sparks-timeline__item {
+    padding-inline-start: 1.2rem;
+  }
+}

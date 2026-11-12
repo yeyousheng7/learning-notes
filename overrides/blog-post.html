@@ -1,0 +1,13 @@
+{% extends "main.html" %}
+
+{% block container %}
+  <div class="md-content md-content--sparks" data-md-component="content">
+    <article class="md-content__inner md-typeset sparks-page sparks-entry">
+      <a class="sparks-back" href="{{ page.parent.url | url }}" aria-label="返回灵光">返回</a>
+      <time class="sparks-date" datetime="{{ page.config.date.created.isoformat() }}">
+        {{- page.config.date.created | date -}}
+      </time>
+      {% include "partials/content.html" %}
+    </article>
+  </div>
+{% endblock %}

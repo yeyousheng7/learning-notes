@@ -1,4 +1,3 @@
-
 # Learning Notes
 
 记录学习过程中值得长期保留的知识、方法与实践。
@@ -7,26 +6,7 @@
 
 ## 笔记
 
-目前已经整理：
-
-- [AI 对话学习笔记](docs/ai-generated/) —— 通过 Prompt 驱动学习对话，并由 AI 整理生成的学习记录
-  - Java：JVM、Spring Cloud
-  - 数据库：MySQL 并发控制、EXPLAIN 与索引设计
-- LLM 学习笔记
-  - [从 Token 到 Transformer](docs/ai/from-token-to-transformer.md)
-  - [从模型架构到训练与推理](docs/ai/from-architecture-to-reasoning.md)
-- 科普向
-  - [代理](docs/popular-science/proxy.md)
-- [AI 提示词库](docs/ai/prompts.md) —— PPT 学习、考前复习、笔记整理与提示词编写
-
-后续会逐步整理更多内容，例如：
-
-- Java / Spring
-- 数据库
-- 操作系统
-- 计算机网络与网络安全
-- Linux
-- 其他学习记录
+主要整理 Java / Spring、数据库、LLM 与 AI 使用等方向的学习笔记，也记录技术科普与个人思考。
 
 ## 在线阅读
 

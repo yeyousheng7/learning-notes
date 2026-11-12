@@ -10,6 +10,7 @@ watch:
 
 theme:
   name: material
+  custom_dir: overrides
   language: zh
   logo: assets/logo.svg
   favicon: assets/favicon.svg
@@ -54,6 +55,19 @@ nav:
   - 科普向:
       - 代理: popular-science/proxy.md
   - AI 提示词库: ai/prompts.md
+  - 灵光: sparks/index.md
+
+plugins:
+  - search
+  - blog:
+      blog_dir: sparks
+      post_url_format: "{slug}"
+      post_date_format: "yyyy 年 M 月 d 日"
+      post_readtime: false
+      archive: false
+      categories: false
+      authors: false
+      pagination: false
 
 markdown_extensions:
   - admonition

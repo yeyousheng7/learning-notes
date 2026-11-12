@@ -1,0 +1,22 @@
+{% extends "main.html" %}
+
+{% block container %}
+  <div class="md-content md-content--sparks" data-md-component="content">
+    <div class="md-content__inner sparks-page">
+      <header class="md-typeset sparks-heading">
+        {{ page.content }}
+      </header>
+      {% if posts %}
+        <ol class="sparks-timeline" aria-label="灵光随想，按时间倒序">
+          {% for post in posts %}
+            <li class="sparks-timeline__item">
+              {% include "partials/post.html" %}
+            </li>
+          {% endfor %}
+        </ol>
+      {% else %}
+        <p class="sparks-empty">还没有记录，留给下一次灵光。</p>
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}
