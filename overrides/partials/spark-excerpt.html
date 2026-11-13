@@ -1,0 +1,20 @@
+<article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    <div class="md-post__meta md-meta">
+      <time datetime="{{ post.config.date.created.isoformat() }}">
+        {{- post.config.date.created | date -}}
+      </time>
+      {% if post.config.draft %}
+        <span class="md-draft">{{ lang.t("blog.draft") }}</span>
+      {% endif %}
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    {{ post.content }}
+    {% if post.more %}
+      <nav class="md-post__action">
+        <a href="{{ post.url | url }}">{{ lang.t("blog.continue") }}</a>
+      </nav>
+    {% endif %}
+  </div>
+</article>
