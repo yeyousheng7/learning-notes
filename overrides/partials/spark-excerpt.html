@@ -17,7 +17,7 @@
       </h2>
       <p class="sparks-protected-label">内容已加密</p>
       <nav class="md-post__action">
-        <a href="{{ post.url | url }}">阅读</a>
+        <a href="{{ post.url | url }}">{{ lang.t("blog.continue") }}</a>
       </nav>
     {% else %}
     {{ post.content }}
