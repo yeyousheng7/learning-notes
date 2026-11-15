@@ -49,6 +49,8 @@ def on_page_context(context, *, page, config, nav):
 
     separator = config.plugins["material/blog"].config.post_excerpt_separator
     for excerpt in context.get("posts", []):
+        if excerpt.meta.get("encrypted"):
+            continue  # The timeline template only shows public metadata.
         if separator in excerpt.post.markdown:
             continue
 

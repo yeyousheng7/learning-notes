@@ -10,11 +10,22 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
+    {% if post.meta.encrypted %}
+      <h2>
+        <a href="{{ post.url | url }}">{{ post.post.title | e }}</a>
+        <span class="sparks-lock-icon" aria-label="加密文章" role="img"></span>
+      </h2>
+      <p class="sparks-protected-label">内容已加密</p>
+      <nav class="md-post__action">
+        <a href="{{ post.url | url }}">阅读</a>
+      </nav>
+    {% else %}
     {{ post.content }}
     {% if post.more %}
       <nav class="md-post__action">
         <a href="{{ post.url | url }}">{{ lang.t("blog.continue") }}</a>
       </nav>
+    {% endif %}
     {% endif %}
   </div>
 </article>

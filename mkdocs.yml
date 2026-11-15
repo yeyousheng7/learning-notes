@@ -4,6 +4,7 @@ site_author: yeyousheng7
 
 hooks:
   - hooks/site_assets.py
+  - hooks/private_sparks.py
   - hooks/sparks.py
 
 watch:

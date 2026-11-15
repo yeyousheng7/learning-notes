@@ -1,0 +1,17 @@
+<section class="sparks-private" aria-label="加密正文">
+  <form class="sparks-unlock">
+    <label for="spark-password">文章密码</label>
+    <div class="sparks-unlock__controls">
+      <input id="spark-password" name="password" type="password" autocomplete="current-password"
+             required aria-describedby="spark-unlock-status">
+      <button class="md-button md-button--primary" type="submit">解锁</button>
+    </div>
+    <p id="spark-unlock-status" class="sparks-unlock__status" role="status" aria-live="polite">解锁后，本标签页内的其他加密文章也会自动解锁。</p>
+  </form>
+  <div class="sparks-unlocked" hidden>
+    <div class="sparks-private__actions"><button class="sparks-relock" type="button">锁定</button></div>
+    <div class="sparks-private__body" role="region" aria-label="解密后的正文" tabindex="-1"></div>
+  </div>
+  <noscript>请启用 JavaScript 后输入密码解锁。</noscript>
+  <script type="application/json" class="sparks-payload">{{ page.meta.private_spark | tojson }}</script>
+</section>

@@ -14,11 +14,6 @@
 
 > 在线地址：[yeyousheng7.github.io/learning-notes](https://yeyousheng7.github.io/learning-notes/)
 
-## 本地预览
+## 使用
 
-本项目使用 [uv](https://docs.astral.sh/uv/) 管理依赖：
-
-```bash
-uv sync
-uv run mkdocs serve
-```
+本地预览、笔记写作与发布步骤见[使用说明](guides/usage.md)。

@@ -124,6 +124,103 @@
   margin-top: 0;
 }
 
+/* A standalone Lucide SVG, tinted with the current theme's text color. */
+.sparks-lock-icon {
+  display: inline-block;
+  width: 0.75em;
+  height: 0.75em;
+  margin-inline-start: 0.25em;
+  background: currentColor;
+  mask: url("../assets/icons/lock-keyhole.svg") center / contain no-repeat;
+  -webkit-mask: url("../assets/icons/lock-keyhole.svg") center / contain no-repeat;
+}
+
+.sparks-protected-label,
+.sparks-preview-label {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.75rem;
+}
+
+.sparks-private [hidden] {
+  display: none !important;
+}
+
+.sparks-unlock {
+  max-width: 27rem;
+  padding-block: 0.5rem 1rem;
+}
+
+.sparks-unlock label {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.sparks-unlock__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.sparks-unlock input {
+  flex: 1 1 10rem;
+  min-width: 0;
+  min-height: 44px;
+  border: 1px solid var(--md-default-fg-color--light);
+  border-radius: 0.15rem;
+  padding: 0.5rem 0.65rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font: inherit;
+}
+
+.sparks-unlock input:focus-visible,
+.sparks-private button:focus-visible {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: 3px;
+}
+
+.sparks-unlock .md-button {
+  min-height: 44px;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+.sparks-unlock button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.sparks-unlock__status {
+  min-height: 1.5em;
+  font-size: 0.7rem;
+}
+
+.sparks-private__actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.5rem;
+}
+
+/* Focus announces the newly revealed reading region, rather than a control. */
+.sparks-private__body:focus {
+  outline: none;
+}
+
+.sparks-relock {
+  min-height: 44px;
+  padding: 0.3rem 0.5rem;
+  background: transparent;
+  color: var(--md-typeset-a-color);
+  font: inherit;
+  cursor: pointer;
+}
+
+.sparks-relock:hover {
+  color: var(--md-accent-fg-color);
+}
+
 .md-main:has(.sparks-page) .md-sidebar--secondary {
   display: none;
 }

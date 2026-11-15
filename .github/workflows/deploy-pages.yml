@@ -38,6 +38,9 @@ jobs:
       - name: Install locked dependencies
         run: uv sync --locked --no-dev
 
+      - name: Test private spark publishing
+        run: uv run --no-sync python -m unittest tests.test_private_sparks
+
       - name: Build MkDocs site
         run: uv run --no-sync mkdocs build --strict
 

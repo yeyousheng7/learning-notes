@@ -7,7 +7,16 @@
       <time class="sparks-date" datetime="{{ page.config.date.created.isoformat() }}">
         {{- page.config.date.created | date -}}
       </time>
-      {% include "partials/content.html" %}
+      {% if page.meta.private_preview %}
+        <p class="sparks-preview-label">本地私密原文预览</p>
+        {% include "partials/content.html" %}
+      {% elif page.meta.encrypted %}
+        <h1>{{ page.title | e }} <span class="sparks-lock-icon" aria-label="加密文章" role="img"></span></h1>
+        {% include "partials/spark-unlock.html" %}
+        <script src="{{ 'javascripts/private-sparks.js' | url }}" defer></script>
+      {% else %}
+        {% include "partials/content.html" %}
+      {% endif %}
     </article>
   </div>
 {% endblock %}
