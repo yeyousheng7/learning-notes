@@ -17,6 +17,7 @@
     - [从模型架构到训练与推理](ai/from-architecture-to-reasoning.md)
 - 科普向
     - [代理](popular-science/proxy.md)
+    - [如何选择适合自己的 AI 模型？](popular-science/choosing-an-ai-model.md)
 - [AI 提示词库](ai/prompts.md)
     - [PPT 逐页精讲](ai/prompts.md#ppt-deep-dive)
     - [PPT 期末速通](ai/prompts.md#ppt-exam-review)
@@ -27,6 +28,7 @@
 
 ## 最近整理
 
+- AI 使用：模型选型、工具与提示词
 - AI 提示词：更新学习模板，新增 Prompt Writer
 - LLM：模型架构、训练与推理
 - LLM：Token、Attention 与 Transformer

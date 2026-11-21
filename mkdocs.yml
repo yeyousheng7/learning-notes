@@ -56,6 +56,7 @@ nav:
       - 从模型架构到训练与推理: ai/from-architecture-to-reasoning.md
   - 科普向:
       - 代理: popular-science/proxy.md
+      - 如何选择适合自己的 AI 模型？: popular-science/choosing-an-ai-model.md
   - AI 提示词库: ai/prompts.md
   - 灵光: sparks/index.md
 

@@ -20,7 +20,7 @@
 
 这里，代理服务器就扮演了中介的角色。你将请求交给代理服务器，由它替你访问目标网站，再将结果转交给你。例如，你希望访问一个平时访问不到的网站，而代理服务器能够访问。于是，你可以将请求交给代理服务器，由它代替你完成访问。这就是网络代理的一种常见用途。
 
-![电脑通过代理访问目标网站的流程示意图](assets/images/proxy-access-flow.png){ width="75%" }
+![电脑通过代理访问目标网站的流程示意图](assets/images/proxy/proxy-access-flow.png){ width="75%" }
 
 > 很多人会将这类服务统称为 VPN，但事实上，VPN 和代理并不是同一个概念。两者可以实现一些相似的用途，但工作原理并不完全相同。这里暂时不深入讨论。
 
@@ -73,19 +73,19 @@
 
 [sing-box](https://sing-box.sagernet.org/)，严格来说，sing-box 本身主要是代理内核，并不等同于具有图形界面的客户端。不过，也有一些工具为它提供了图形化管理界面。
 
-![SingBox Manager 的配置管理界面](assets/images/sing-box-manager.png){ width="75%" }
+![SingBox Manager 的配置管理界面](assets/images/proxy/sing-box-manager.png){ width="75%" }
 
 ### Surge
 
 [Surge](https://nssurge.com/)，功能丰富，除了代理以外，还提供网络调试、流量分析等功能。
 
-![Surge 的活动面板与网络流量统计](assets/images/surge-activity-dashboard.png){ width="75%" }
+![Surge 的活动面板与网络流量统计](assets/images/proxy/surge-activity-dashboard.png){ width="75%" }
 
 ### v2rayN
 
 [v2rayN](https://github.com/2dust/v2rayN)，老牌软件，支持多种代理内核和协议，功能比较全面。
 
-![v2rayN 的代理节点列表与连接日志](assets/images/v2rayn-node-list.png){ width="75%" }
+![v2rayN 的代理节点列表与连接日志](assets/images/proxy/v2rayn-node-list.png){ width="75%" }
 
 ## 如何使用代理？
 
@@ -210,9 +210,9 @@
 
 购买代理服务时，你经常会看到一个名词：**流量**。例如：
 
-![不限时代理流量包的用量信息](assets/images/proxy-data-package-one-time.png){ width="75%" }
+![不限时代理流量包的用量信息](assets/images/proxy/proxy-data-package-one-time.png){ width="75%" }
 
-![包月代理套餐的流量与到期信息](assets/images/proxy-data-package-monthly.png){ width="75%" }
+![包月代理套餐的流量与到期信息](assets/images/proxy/proxy-data-package-monthly.png){ width="75%" }
 
 这些套餐可能按月提供一定的流量，也可能提供不限时间的流量包，虽然表现形式各不相同，但本质上都是代理服务商提供的使用额度。
 
@@ -222,7 +222,7 @@
 
 它们的区别如下：
 
-![运营商流量与代理流量在访问链路中的区别](assets/images/carrier-vs-proxy-data-flow.png){ width="75%" }
+![运营商流量与代理流量在访问链路中的区别](assets/images/proxy/carrier-vs-proxy-data-flow.png){ width="75%" }
 
 简单总结：
 
